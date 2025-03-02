@@ -31,7 +31,7 @@ class PasswordManager:
 
             length (int): The length of the password to generate (default: 12).
 
-            str: A randomly generated password.
+            A randomly generated password.
         """
         characters = string.ascii_letters + string.digits + string.punctuation
         return ''.join(random.choice(characters) for _ in range(length))
